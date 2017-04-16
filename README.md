@@ -5,4 +5,4 @@ all the source is written in Scheme (Lisp). I used the MIT/GNU Scheme to follow 
 
 
 
-* This is currently a work in progress.
+*This is currently a work in progress.*
