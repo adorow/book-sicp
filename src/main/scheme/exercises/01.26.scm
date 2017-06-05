@@ -1,0 +1,2 @@
+; by using an explicit multiplication, the function is evaluated twice, and processed twice, meaning that the whole evaluation tree of this formula is executed twice;
+; while in the square function this is only evaluated once, and then passed as a parameter, and that one result is used to multiply it with itself.
