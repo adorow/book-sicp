@@ -9,19 +9,19 @@
      (remainder (* base (expmod base (- exp 1) m))
         m))))
 
-(define (cheat-fermat n)
-    (define (cheat-fermat-iter a n)
+(define (cheats-fermat n)
+    (define (cheats-fermat-iter a n)
         (if (< a n)
             (if (= (expmod a n n) (remainder a n))
-                (cheat-fermat-iter (+ a 1) n)
+                (cheats-fermat-iter (+ a 1) n)
                 false)
             true))
-    (cheat-fermat-iter 1 n))
+    (cheats-fermat-iter 1 n))
 
 ; running the algorithm against the given carmichael numbers return true always:
-(cheat-fermat 561)  ; true
-(cheat-fermat 1105) ; true
-(cheat-fermat 1729) ; true
-(cheat-fermat 2465) ; true
-(cheat-fermat 2821) ; true
-(cheat-fermat 6601) ; true
+(cheats-fermat 561)  ; true
+(cheats-fermat 1105) ; true
+(cheats-fermat 1729) ; true
+(cheats-fermat 2465) ; true
+(cheats-fermat 2821) ; true
+(cheats-fermat 6601) ; true
